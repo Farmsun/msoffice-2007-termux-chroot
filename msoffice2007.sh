@@ -87,7 +87,7 @@ printf "\033[92mCopying files fininshed\n\033[0m"
 
 
 dpkg --add-architecture armhf
-chmod +x files/box86
+chmod +x /root/files/box86
 
 printf "\033[92m\nUpdating repositories...\n\033[0m"
 apt update
@@ -99,7 +99,7 @@ printf "\033[92m\nInstalling required packages...\n\033[0m"
 apt install libasound2:armhf libc6:armhf libglib2.0-0:armhf libgphoto2-6:armhf libgphoto2-port12:armhf libgstreamer-plugins-base1.0-0:armhf libgstreamer1.0-0:armhf libpcap0.8:armhf libpulse0:armhf libsane1:armhf libudev1:armhf libusb-1.0-0:armhf libx11-6:armhf libxext6:armhf ocl-icd-libopencl1:armhf libasound2-plugins:armhf libncurses6:armhf libcap2-bin:armhf libcups2:armhf libdbus-1-3:armhf libfontconfig1:armhf libfreetype6:armhf libglu1-mesa:armhf libgnutls30:armhf libgssapi-krb5-2:armhf libkrb5-3:armhf libodbc1:armhf libosmesa6:armhf libsdl2-2.0-0:armhf libv4l-0:armhf libxcomposite1:armhf libxcursor1:armhf libxfixes3:armhf libxi6:armhf libxinerama1:armhf libxrandr2:armhf libxrender1:armhf libxxf86vm1:armhf gcc-arm-linux-gnueabihf xfce4 xfce4-goodies tightvncserver -y
 
 printf "\033[33mCreating symlinks...\n\033[0m"
-cp files/box86 /bin/box86
+cp /root/files/box86 /bin/box86
 ln -s /root/files/wine/bin/wine /bin/wine
 ln -s /root/files/wine/bin/wineserver /bin/wineserver
 
